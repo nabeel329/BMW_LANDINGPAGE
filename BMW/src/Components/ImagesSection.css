@@ -1,0 +1,107 @@
+/* Reset margins and padding globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Images section wrapper */
+.images-section-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Images section */
+.images-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 400px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow */
+  flex-wrap: wrap; /* Enable wrapping for responsiveness */
+}
+
+/* Image container */
+.image-container {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.side-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+
+/* Image text */
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-align: left;
+}
+
+.image-text h4,
+.image-text h1,
+.image-text h2 {
+  margin: 0;
+}
+
+/* Read more button */
+.read-more-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background: white;
+  color: black;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .image-text {
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+  }
+
+  .read-more-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-text h1,
+  .image-text h2,
+  .image-text h4 {
+    font-size: 16px;
+  }
+
+  .read-more-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,91 @@
+/* Podcast Container Styling */
+.podcast-container {
+  display: flex;
+  width: 100%;
+  min-height: 400px; /* Minimum height */
+  background-color: #333; /* Background color similar to footer */
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Left Side (Text) Styling */
+.podcast-left {
+  flex: 1; /* Take up 50% of the width */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Allows text to scroll if necessary */
+}
+
+.podcast-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.podcast-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.podcast-listen-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.podcast-listen-btn:hover {
+  background-color: #444;
+}
+
+/* Right Side (Images and Arrow) Styling */
+/* Right Side (Images and Arrow) Styling */
+/* Right Side (Images and Arrow) Styling */
+/* Right Side (Images and Arrow) Styling */
+.podcast-right {
+  flex: 1; /* Take up 50% of the width */
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Vertically center the content */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Position the arrow within this container */
+}
+
+.podcast-images {
+  display: flex; /* Arrange images horizontally */
+  gap: 20px; /* Space between images */
+  justify-content: flex-start; /* Align images to the left */
+  margin-right: 0; /* Remove margin after images */
+}
+
+.podcast-images img {
+  width: 200px; /* Increased size for images */
+  height: 200px; /* Increased height for images */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Arrow Button Styling */
+.podcast-arrow {
+  position: absolute;
+  right: 0; /* Position at the right end of the container */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  padding: 10px;
+  font-size: 24px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+

@@ -1,0 +1,116 @@
+/* Main container for InfoDisplay component */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between text and image */
+  padding: 20px;
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  margin: 0 auto; /* Center the component horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Text component styling */
+.text-component {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  text-align: left;
+  padding: 0 20px;
+  color: #333;
+  width: 100%; /* Full width by default for smaller screens */
+}
+
+.text-component h1 {
+  font-size: 2.5vw; /* Use relative font size */
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+.text-component p {
+  font-size: 1.5vw;
+  margin: 0 0 20px 0;
+  color: gray;
+}
+
+/* Button styling */
+.read-more-btn {
+  padding: 12px 24px;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* Image component styling */
+.image-component {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-component img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .text-component {
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px;
+  }
+
+  .text-component h1 {
+    font-size: 24px;
+  }
+
+  .text-component p {
+    font-size: 16px;
+  }
+
+  .read-more-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .image-component {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-component h1 {
+    font-size: 20px;
+  }
+
+  .text-component p {
+    font-size: 14px;
+  }
+
+  .read-more-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
